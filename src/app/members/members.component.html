@@ -1,0 +1,21 @@
+<div class="container members-container py-5">
+  <h2 class="text-center mb-4">Nos Membres</h2>
+  <br/>
+  <br/>
+  <div class="row justify-content-center">
+    <div *ngFor="let member of members" class="col-lg-4 col-md-6 col-sm-12 mb-4">
+      <div class="member-card">
+        <h5 class="member-name">{{ member.name }}</h5>
+        <a *ngIf="member.url; else noLink" [href]="member.url" target="_blank" 
+           class="btn btn-primary">
+          <i class="bi bi-globe"></i> Site Web
+        </a>
+        <ng-template #noLink>
+          <button class="btn btn-secondary" disabled>
+            <i class="bi bi-globe"></i> Pas de site
+          </button>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>

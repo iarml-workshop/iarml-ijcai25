@@ -1,0 +1,186 @@
+/* home.component.css ou .scss */
+
+/* home.component.css ou .scss */
+
+.hero-banner {
+  /* Supprimer cette ligne : */
+  /* opacity: 0.95; */ 
+
+  /* Appliquer la surcouche sombre via linear-gradient */
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('../../assets/img/old-architecture-dusk-street-old-montreal-canada.jpg'); 
+  /* Ajustez le 0.5 si vous voulez plus ou moins sombre (0.6, 0.7 etc.) */
+
+  background-size: cover;
+  background-position: center center;
+  min-height: 75vh; 
+  padding-top: 56px; /* Ajustez si votre navbar a une hauteur différente */
+  color: white; 
+  
+  /* Positionnement relatif pour contexte d'empilement si besoin (bon à garder) */
+  position: relative; 
+  z-index: 1;
+
+  /* Centrage (via Bootstrap ou CSS perso) */
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+}
+
+.hero-content {
+   position: relative; 
+   z-index: 2; /* Assure que le contenu est au-dessus de l'overlay */
+   /* Vous pouvez ajouter un max-width ici si le texte devient trop large sur grand écran */
+   /* max-width: 900px; */
+   /* padding: 0 15px; Ajouter un peu de padding horizontal si max-width est utilisé */
+}
+
+/* Ajustements possibles pour les ombres si nécessaire, mais elles devraient être ok avec l'overlay */
+.hero-content h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800; 
+  font-size: 4.5em; /* Ou 4em si c'est trop grand */
+  text-transform: uppercase; 
+  letter-spacing: 1.5px; /* Léger ajustement de l'espacement */
+  margin-bottom: 0.4em; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Ombre toujours utile */
+}
+
+.hero-content .subtitle {
+  font-family: 'Poppins', sans-serif; 
+  font-size: 2.2em; 
+  font-weight: 600; 
+  margin-top: 0.5em; 
+  margin-bottom: 0.7em; 
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.hero-content .date-info {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+  font-weight: 400; 
+  margin-bottom: 0; /* Pas de marge en bas si c'est le dernier élément */
+  margin-top: 0; 
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Styles pour location-info (si vous le remettez) */
+/* ... */
+
+/* Media queries pour hero restent importants */
+@media (max-width: 768px) {
+  .hero-content h1 { font-size: 3em; letter-spacing: 1px;}
+  .hero-content .subtitle { font-size: 1.8em; }
+  .hero-content .date-info { font-size: 1.1em; }
+}
+@media (max-width: 480px) {
+  .hero-content h1 { font-size: 2.4em; }
+  .hero-content .subtitle { font-size: 1.5em; }
+}
+
+/* ... (Styles Introduction Section - Assurez la cohérence) ... */
+.introduction-section h2 {
+   font-family: 'Poppins', sans-serif; 
+   font-weight: 700;
+   color: #343a40; /* Un noir un peu moins dur */
+   /* S'assurer que margin-bottom (mb-4) est suffisant */
+}
+.introduction-section p {
+  font-family: 'Lato', sans-serif; 
+  line-height: 1.7; /* Augmenter légèrement l'interligne pour lisibilité */
+  color: #495057; /* Gris foncé pour le texte */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.schedule-section {
+  background-color: #f8f9fa; /* Light grey background (Bootstrap bg-light equivalent) */
+  /* Or keep it white if preferred */
+}
+
+.schedule-section h2 {
+   font-family: 'Poppins', sans-serif; /* Consistent heading font */
+   font-weight: 700;
+   color: #333; /* Darker color for heading */
+}
+
+.schedule-list {
+  max-width: 900px; /* Optional: constrain width slightly more than container */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.schedule-item {
+  background-color: #ffffff; /* White background for each item */
+  border: 1px solid #dee2e6; /* Subtle border (Bootstrap border equivalent) */
+  border-radius: 0.375rem; /* Rounded corners (Bootstrap rounded equivalent) */
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.schedule-item:hover {
+   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+.schedule-item .time {
+  font-family: 'Lato', sans-serif;
+  min-width: 120px; /* Ensures times align nicely, adjust as needed */
+  flex-shrink: 0; /* Prevents time from shrinking on smaller flex containers */
+  text-align: left; /* Default, but explicit */
+  color: #0d6efd; /* Example: Bootstrap primary color for time */
+}
+
+.schedule-item .activity-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; /* Semi-bold for activity title */
+  font-size: 1.1em;
+  color: #212529; /* Darker text for title */
+}
+
+.schedule-item .details {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9em;
+  /* text-muted class from Bootstrap already handles color */
+}
+
+/* Optional: Style breaks differently */
+.schedule-item.schedule-break {
+   background-color: #e9ecef; /* Slightly different background for breaks */
+   border-left: 5px solid #6c757d; /* Accent border color (Bootstrap secondary) */
+}
+
+.schedule-item.schedule-break .time {
+   color: #6c757d; /* Match border color */
+}
+
+
+/* --- Responsive Adjustments --- */
+/* Bootstrap's d-md-flex handles the main layout switch */
+/* We might adjust time width on small screens if needed */
+@media (max-width: 767.98px) { /* Below medium breakpoint */
+  .schedule-item .time {
+    min-width: auto; /* Remove fixed width */
+    text-align: left; /* Keep left align */
+    margin-bottom: 0.5rem !important; /* Ensure space below time when stacked */
+    margin-right: 0 !important; /* Remove right margin when stacked */
+    font-size: 0.9em; /* Slightly smaller time on mobile */
+  }
+
+  .schedule-item .activity-title {
+    font-size: 1em; /* Slightly smaller title on mobile */
+  }
+}

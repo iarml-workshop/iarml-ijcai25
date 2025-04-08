@@ -1,0 +1,43 @@
+/* navbar.component.css ou .scss */
+.navbar {
+  display: flex; /* Aligne les éléments horizontalement */
+  justify-content: space-between; /* Espace entre le nom/logo et les liens */
+  align-items: center; /* Centre verticalement */
+  background-color: #333; /* Couleur de fond sombre */
+  padding: 10px 20px; /* Espacement intérieur */
+  color: white; /* Couleur du texte */
+  position: fixed; /* Fixe la barre en haut */
+  top: 0;
+  left: 0;
+  width: 100%; /* Prend toute la largeur */
+  z-index: 1000; /* S'assure qu'elle est au-dessus des autres éléments */
+  box-sizing: border-box; /* Inclut padding dans la largeur totale */
+}
+
+.navbar-brand a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em; /* Taille du "logo" ou nom */
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style: none; /* Enlève les puces */
+  display: flex; /* Aligne les liens horizontalement */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-left: 20px; /* Espace entre les liens */
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Effet de transition au survol */
+}
+
+.navbar-links a:hover {
+  color: #ddd; /* Couleur au survol */
+}

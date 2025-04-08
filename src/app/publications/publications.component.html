@@ -1,0 +1,15 @@
+<div class="container py-5">
+    <h2 class="text-center mb-4">Publications ERIANA</h2>
+    <div class="row justify-content-center">
+        <div *ngFor="let pub of publications" class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 d-flex flex-column">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">{{ pub.title_s }}</h5>
+                    <p class="card-text"><strong>Auteurs :</strong> {{ pub.authFullName_s?.join(', ') || 'Inconnu' }}</p>
+                    <p class="card-text"><strong>Conférence :</strong> {{ pub.conferenceTitle_s || 'Non spécifiée' }}</p>
+                    <a [href]="pub.uri_s" target="_blank" class="btn btn-primary mt-auto">Voir la publication</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
