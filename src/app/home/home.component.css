@@ -456,9 +456,6 @@
   /* p-3, h-100 via classes HTML */
 }
 
-.member-card:hover {
-   box-shadow: 0 .25rem .75rem rgba(0,0,0,.07); /* Ombre très subtile au survol */
-}
 
 .member-card .committee-name {
   font-family: 'Poppins', sans-serif; 
