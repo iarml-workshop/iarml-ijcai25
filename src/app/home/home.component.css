@@ -108,11 +108,6 @@
 
 
 
-.schedule-section {
-  background-color: #f8f9fa; /* Light grey background (Bootstrap bg-light equivalent) */
-  /* Or keep it white if preferred */
-}
-
 .schedule-section h2 {
    font-family: 'Poppins', sans-serif; /* Consistent heading font */
    font-weight: 700;
@@ -183,4 +178,234 @@
   .schedule-item .activity-title {
     font-size: 1em; /* Slightly smaller title on mobile */
   }
+}
+
+
+
+
+
+/* ========================== */
+/* Important Dates Section    */
+/* ========================== */
+.important-dates-section {
+  background-color: #f8f9fa; /* Light grey background to differentiate */
+  /* Or keep white: background-color: #ffffff; */
+  /* border-top: 1px solid #e9ecef; Already added via Bootstrap class */
+  /* py-5 already added via Bootstrap class */
+}
+
+.important-dates-section h2 {
+   font-family: 'Poppins', sans-serif; 
+   font-weight: 700;
+   color: #343a40; 
+   /* text-center mb-5 already added via Bootstrap class */
+}
+
+.dates-list {
+  max-width: 600px; /* Constrain width for better readability */
+  /* mx-auto already added via Bootstrap class */
+}
+
+.date-item {
+  background-color: #ffffff; /* White background for each item */
+  padding: 1rem 1.5rem; /* Padding inside each date item */
+  border: 1px solid #dee2e6; /* Subtle border */
+  border-radius: 0.375rem; /* Rounded corners */
+  /* d-flex align-items-center mb-3 already added via Bootstrap class */
+}
+
+.date-item .date-icon {
+  font-size: 1.5em; /* Size of the icon */
+  color: #0d6efd; /* Bootstrap primary color, or choose another */
+  width: 30px; /* Fixed width for alignment */
+  text-align: center;
+   /* me-3 already added via Bootstrap class */
+}
+
+.date-item .event-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #212529;
+  display: block; /* Makes title take its own line if needed, or adjust */
+  margin-right: 0.5em; /* Space between title and date */
+}
+
+.date-item .event-date {
+  font-family: 'Lato', sans-serif;
+  color: #495057;
+  font-size: 1em;
+}
+
+/* Responsive adjustments if needed */
+@media (max-width: 576px) {
+  .date-item {
+    padding: 0.75rem 1rem;
+  }
+  .date-item .event-title {
+     display: block; /* Ensure title is above date on small screens */
+     margin-right: 0;
+     margin-bottom: 0.25rem;
+  }
+   .date-item .date-icon {
+    font-size: 1.3em; 
+    width: 25px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================== */
+/* Topics of Interest Section */
+/* ========================== */
+.topics-section {
+  background-color: #ffffff; /* White background */
+  /* py-5, border-top added via Bootstrap classes */
+}
+
+.topics-section h2 {
+   font-family: 'Poppins', sans-serif; 
+   font-weight: 700;
+   color: #343a40; 
+   /* text-center mb-4 added via Bootstrap classes */
+}
+
+.topics-section .lead {
+  font-family: 'Lato', sans-serif;
+  color: #495057;
+  font-size: 1.15em; /* Slightly larger than default p */
+  line-height: 1.7;
+}
+
+.topic-category .category-content {
+  background-color: #f8f9fa; /* Light grey background for each category box */
+  border-radius: 0.375rem;
+  border: 1px solid #dee2e6;
+  /* p-4, h-100 added via Bootstrap classes if needed */
+}
+
+.topic-category .category-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.3em;
+  color: #0d6efd; /* Bootstrap primary color for emphasis */
+   /* mb-3 added via Bootstrap classes */
+}
+
+.topic-category .topic-items {
+  padding-left: 0; /* Override default ul padding */
+}
+
+.topic-category .topic-items li {
+   font-family: 'Lato', sans-serif;
+   color: #495057;
+   font-size: 0.95em;
+   line-height: 1.6;
+   /* mb-2, d-flex added via Bootstrap classes */
+}
+
+.topic-category .topic-items .topic-icon {
+  color: #6c757d; /* Bootstrap secondary color */
+  font-size: 0.8em; /* Smaller icon */
+  margin-top: 0.3em; /* Align icon slightly better with text */
+  flex-shrink: 0; /* Prevent icon from shrinking */
+   /* me-2 added via Bootstrap classes */
+}
+
+/* Responsive - Bootstrap grid handles columns. */
+/* Adjust font sizes if needed */
+@media (max-width: 767.98px) {
+   .topics-section .lead {
+     font-size: 1.1em;
+   }
+   .topic-category .category-title {
+     font-size: 1.2em;
+   }
+    .topic-category .topic-items li {
+     font-size: 0.9em;
+   }
+}
+
+
+
+/* ================================ */
+/* Submission Guidelines Section    */
+/* ================================ */
+.submission-guidelines-section {
+  /* bg-light, py-5, border-top added via Bootstrap classes */
+}
+
+.submission-guidelines-section h2 {
+   font-family: 'Poppins', sans-serif; 
+   font-weight: 700;
+   color: #343a40; 
+   /* text-center mb-5 added via Bootstrap classes */
+}
+
+.submission-guidelines-section p, 
+.submission-guidelines-section li {
+  font-family: 'Lato', sans-serif;
+  color: #495057;
+  line-height: 1.7;
+}
+
+.submission-guidelines-section a {
+  color: #0d6efd; /* Bootstrap primary link color */
+  text-decoration: underline;
+  text-decoration-color: rgba(13, 110, 253, 0.4); /* Lighter underline */
+  transition: text-decoration-color 0.2s ease;
+}
+
+.submission-guidelines-section a:hover {
+   text-decoration-color: rgba(13, 110, 253, 0.8); /* Darker underline on hover */
+}
+
+/* Specific styles for the link icons */
+.submission-guidelines-section a i.fa-external-link-alt,
+.submission-guidelines-section a i.fa-arrow-right {
+  font-size: 0.8em; /* Make icons slightly smaller */
+}
+
+/* Style for the list icons */
+.submission-formats .format-icon {
+  color: #6c757d; /* Bootstrap secondary color */
+  font-size: 1.1em;
+   width: 20px; /* Ensure alignment */
+   text-align: center;
+   flex-shrink: 0;
+  /* me-2, mt-1 added via Bootstrap classes */
+}
+
+/* Style for the submission button area */
+.submission-link-wrapper p {
+  font-weight: 500; /* Slightly bolder text before button */
+}
+
+.submission-link-wrapper .btn {
+  font-family: 'Poppins', sans-serif; /* Match heading font */
+  font-weight: 600;
+  padding: 0.75rem 1.5rem; /* Adjust button padding */
+  color: white;
 }
