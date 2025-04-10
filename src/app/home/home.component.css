@@ -9,7 +9,7 @@
   /* Appliquer la surcouche sombre via linear-gradient */
   background-image: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url('../../assets/img/old-architecture-dusk-street-old-montreal-canada.jpg'); 
+    url('../../assets/img/b.jpg'); 
   /* Ajustez le 0.5 si vous voulez plus ou moins sombre (0.6, 0.7 etc.) */
 
   background-size: cover;
@@ -89,9 +89,10 @@
    /* S'assurer que margin-bottom (mb-4) est suffisant */
 }
 .introduction-section p {
-  font-family: 'Lato', sans-serif; 
-  line-height: 1.7; /* Augmenter légèrement l'interligne pour lisibilité */
-  color: #495057; /* Gris foncé pour le texte */
+  font-family: 'Lato', sans-serif;
+  color: #495057;
+  line-height: 1.7;
+  font-size: 1.1em;
 }
 
 
@@ -353,9 +354,6 @@
 /* ================================ */
 /* Submission Guidelines Section    */
 /* ================================ */
-.submission-guidelines-section {
-  /* bg-light, py-5, border-top added via Bootstrap classes */
-}
 
 .submission-guidelines-section h2 {
    font-family: 'Poppins', sans-serif; 
@@ -369,6 +367,7 @@
   font-family: 'Lato', sans-serif;
   color: #495057;
   line-height: 1.7;
+  font-size: 1.1em;
 }
 
 .submission-guidelines-section a {
@@ -408,4 +407,91 @@
   font-weight: 600;
   padding: 0.75rem 1.5rem; /* Adjust button padding */
   color: white;
+}
+
+
+
+
+
+
+
+
+
+/* ======================= */
+/* Committee Section Image Style */
+/* ======================= */
+.committee-section {
+  background-color: #f8f9fa;
+}
+
+.committee-section .committee-main-title { /* Titre "Committee" */
+   font-family: 'Poppins', sans-serif; 
+   font-weight: 600; /* Moins gras que 700 peut-être */
+   color: #343a40; 
+   font-size: 2rem; /* Ajuster taille si besoin */
+   /* text-center mb-5 via classe HTML */
+}
+
+.committee-role .role-title { /* Titres "Organizing/Program Committee" */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.4em; /* Taille titre rôle */
+  color: #212529; /* Noir doux */
+  border-bottom: 1px solid #e9ecef; /* Ligne de séparation sous le titre */
+  padding-bottom: 0.75rem;
+  /* d-flex, align-items-center, mb-4 via classes HTML */
+}
+
+.committee-role .role-icon {
+   color: #0d6efd; /* Couleur primaire pour l'icône */
+   font-size: 1.1em; /* Taille icône rôle */
+}
+
+.member-card {
+  background-color: #f8f9fa; /* Fond des cartes gris très clair (bg-light) */
+  border-radius: 0.375rem; /* Coins arrondis */
+  border: none; /* Pas de bordure visible par défaut */
+  text-align: left; /* !!! Texte aligné à gauche dans la carte !!! */
+  transition: box-shadow 0.2s ease-in-out;
+  /* p-3, h-100 via classes HTML */
+}
+
+.member-card:hover {
+   box-shadow: 0 .25rem .75rem rgba(0,0,0,.07); /* Ombre très subtile au survol */
+}
+
+.member-card .committee-name {
+  font-family: 'Poppins', sans-serif; 
+  font-size: 1em; /* Taille Nom */
+  color: #212529;
+  /* fw-semibold, mb-1 via classes HTML */
+}
+
+.member-card .committee-org {
+  font-family: 'Lato', sans-serif;
+  /* text-muted, small, mb-1 via classes HTML */
+}
+
+.member-card .committee-email {
+   word-break: break-word;
+   /* small via classe HTML */
+}
+
+.member-card .committee-email .committee-link {
+  font-family: 'Lato', sans-serif;
+  color: #0d6efd; /* Lien en bleu */
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.member-card .committee-email .committee-link:hover {
+  text-decoration: underline;
+}
+
+/* Style pour le message "To Be Announced" */
+.tba-message {
+  background-color: #f8f9fa; /* Même fond que les cartes */
+  border-radius: 0.375rem;
+  color: #6c757d; /* Gris secondaire */
+  font-family: 'Lato', sans-serif;
 }

@@ -1,11 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@600;700;800&display=swap');
 
-/* Définir des polices de base si vous le souhaitez */
 body {
-  font-family: 'Lato', sans-serif; /* Police par défaut pour le corps */
+  font-family: 'Lato', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif; /* Police par défaut pour les titres */
+  font-family: 'Poppins', sans-serif;
 }
