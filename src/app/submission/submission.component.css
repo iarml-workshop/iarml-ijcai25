@@ -1,0 +1,49 @@
+.submission-guidelines-section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #343a40;
+}
+
+.submission-guidelines-section p,
+.submission-guidelines-section li {
+  font-family: 'Lato', sans-serif;
+  color: #495057;
+  line-height: 1.7;
+  font-size: 1.1em;
+}
+
+.submission-guidelines-section a {
+  color: #0d6efd;
+  text-decoration: underline;
+  text-decoration-color: rgba(13, 110, 253, 0.4);
+  transition: text-decoration-color 0.2s ease;
+}
+
+.submission-guidelines-section a:hover {
+  text-decoration-color: rgba(13, 110, 253, 0.8);
+}
+
+.submission-guidelines-section a i.fa-external-link-alt,
+.submission-guidelines-section a i.fa-arrow-right {
+  font-size: 0.8em;
+}
+
+.submission-formats .format-icon {
+  color: #6c757d;
+  font-size: 1.1em;
+  width: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+
+.submission-link-wrapper p {
+  font-weight: 500;
+}
+
+.submission-link-wrapper .btn {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  color: white;
+}
